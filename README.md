@@ -2,9 +2,9 @@
 
 A full-stack learning project demonstrating modern web development with Vue 3, Nuxt 3, Pinia, D3.js, Python, and FastAPI.
 
-## 🎯 Learning Goals
+## 🎯 Goals
 
-This project is designed to master:
+This project is designed with:
 - **Frontend**: Vue 3 Composition API, Nuxt 3 SSR/SSG, Pinia state management, D3.js visualizations
 - **Backend**: Python, FastAPI, SQLAlchemy, database query optimization
 - **Architecture**: Clean architecture patterns, scalability, maintainability
