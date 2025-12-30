@@ -1,0 +1,129 @@
+# VuePy - Real-time Analytics Dashboard Project Rules
+
+## Project Context
+
+This is a learning project focused on mastering:
+- **Frontend**: Vue 3, Nuxt 3, Pinia, D3.js, TypeScript
+- **Backend**: Python, FastAPI, SQLAlchemy, Query Optimization
+- **Architecture**: Clean architecture, separation of concerns, scalability
+
+## Code Style & Principles
+
+### General
+- Always prioritize simplicity and minimum code
+- Avoid unnecessary complexity or over-engineering
+- Prefer straightforward solutions over clever ones
+- Remove redundant code and abstractions
+- Code should be self-documenting with clear naming
+
+### Architecture
+- Follow established design patterns appropriate for the context
+- Maintain clear separation of concerns
+- Design for scalability and extensibility
+- Consider reusability and maintainability as important factors
+- Create reusable components, functions, and utilities
+- Write code that is easy to modify and extend
+- Avoid duplication through proper abstraction
+
+### Comments
+- Use minimal comments - code should be self-documenting
+- Only add comments when necessary to explain "why", not "what"
+- Prefer clear naming and structure over comments
+
+### Code Quality
+- Code should be readable and presentable to everyone
+- Prioritize high clarification and simplicity
+- Use descriptive names for variables, functions, and components
+- Structure code logically and consistently
+- Write code that any developer can understand without extensive documentation
+
+## Project Structure
+
+### Frontend (Nuxt 3)
+- Use Composition API with `<script setup>`
+- Pinia stores in `stores/` directory
+- Reusable components in `components/`
+- Composables in `composables/` for shared logic
+- TypeScript for type safety
+- D3.js visualizations as Vue components
+
+### Backend (FastAPI)
+- Follow clean architecture: API → Service → Repository → Model
+- Use Pydantic schemas for request/response validation
+- SQLAlchemy models in `models/`
+- Repository pattern for data access
+- Service layer for business logic
+- Optimize database queries (use indexes, analyze queries)
+- Async/await for I/O operations
+
+## Database
+
+- Use PostgreSQL for production-like experience
+- Implement proper indexing for query optimization
+- Use Alembic for migrations
+- Write optimized queries (avoid N+1 problems)
+- Use connection pooling
+
+## Testing
+
+- Write unit tests for business logic
+- Integration tests for API endpoints
+- Frontend component tests where appropriate
+- Test query performance
+
+## Documentation
+
+- Store detailed docs in `/docs` directory
+- Main README in root for project setup
+- Code should be self-documenting
+- API documentation via FastAPI's automatic docs
+
+## Git & GitHub
+
+- Meaningful commit messages
+- Feature branches for new features
+- GitHub Actions for CI/CD
+- Keep the project public for portfolio
+
+## Learning Focus
+
+- Understand WHY we use each technology
+- Learn best practices, not just syntax
+- Focus on real-world patterns
+- Optimize for performance
+- Consider scalability from the start
+
+## Technology-Specific Rules
+
+### Vue 3 / Nuxt 3
+- Prefer Composition API
+- Use `<script setup>` syntax
+- Leverage Nuxt auto-imports
+- Use TypeScript for type safety
+- Optimize bundle size
+
+### Pinia
+- One store per domain/feature
+- Use stores for shared state
+- Keep stores focused and small
+- Use actions for async operations
+
+### D3.js
+- Create reusable visualization components
+- Separate data processing from rendering
+- Use Vue's reactivity with D3
+- Optimize for performance with large datasets
+
+### Python / FastAPI
+- Type hints everywhere
+- Use async/await for I/O
+- Pydantic for validation
+- Dependency injection for testability
+- Query optimization is critical
+
+### Database
+- Always use indexes for foreign keys and frequently queried columns
+- Analyze query plans
+- Use connection pooling
+- Implement proper error handling
+
