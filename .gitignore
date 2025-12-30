@@ -15,7 +15,7 @@ build/
 .coverage
 htmlcov/
 *.log
-
+.cursorrules
 # Node
 node_modules/
 .nuxt/
